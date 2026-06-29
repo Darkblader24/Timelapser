@@ -1,0 +1,8 @@
+[project]
+name = "timelapser"
+version = "1.0.0"
+requires-python = ">=3.11"
+dependencies = [
+    "customtkinter>=5.2.0",
+    "Pillow>=10.0.0",
+]

@@ -4,7 +4,9 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
-$py = "C:\Users\Kathleen\PycharmProjects\Timelapser\.venv\Scripts\python.exe"
+# Relativ zum Skript-Verzeichnis, damit der Build von überall funktioniert.
+Set-Location -Path $PSScriptRoot
+$py = ".\.venv\Scripts\python.exe"
 
 Add-Type -AssemblyName System.Windows.Forms
 

@@ -35,6 +35,18 @@ python app.py
 3. Choose an output file with **💾 Ausgabedatei …**
 4. Hit **▶ Timelapse erstellen** ✅
 
+## 🏗️ Building the EXE
+
+Run the included PowerShell script to produce a standalone `dist\Timelapser.exe`:
+
+```powershell
+.\build.ps1
+```
+
+It installs the build dependencies (`customtkinter`, `Pillow`, `pyinstaller`),
+bundles everything into a single windowed executable with PyInstaller, and
+launches the app when done.
+
 ## 🙏 Credits
 
 The original `timelapse.py` script was written by [LarsKue](https://github.com/LarsKue).
